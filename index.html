@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+	
+
+<body>
+	<div id="wrapper">
+		<header class="header container">
+			<div class="row text-center">
+				<div class="col">
+					<nar class="menu py-4" id="myNav">
+						<a class="item-menu " href="#trangchu">Trang Chủ</a>
+						<a class="item-menu" href="#gioithieu">Giới thiệu</a>
+						<a class="item-menu" href="#congviec">Công việc</a>
+						<a class="item-menu" href="#sanpham">Sản phẩm</a>
+						<a class="item-menu" href="#lienhe">Liên hệ</a>
+						<span onClick="closeNav()" class="close-nav">X</span>
+					</nar>
+					<span onClick="openNav()" class="nav-mb">𑁔</span>
+					
+				</div>
+			</div>
+		</header>		
+	</div>
+	<!--		End header-->
+	
+	
+	<div class="trangchu" id="trangchu">
+	</div>
+	<!--	End Trang chu-->
+	
+	
+	<div class="gioithieu" id="gioithieu">
+	<div class="container con-gth pt-4">
+  		<div class="row align-items-center">
+    		<div class="col imgb">
+      			<img src="img/Binh.png" alt="" class="binh">
+    		</div>
+    		<div class="col gth imgb">
+				<h1>Giới thiệu</h1>
+      			<h2>Tên thật: Đoàn Minh Tiểu Bình</h2>
+				<h2>Ngày sinh: 10/03/2002</h2>
+				<h2>Giới tính: Nam</h2>
+				<p>Tôi có thể edit video, đặc biệt sản phẩm yêu cầu can thiệp kỹ xảo.
+				<br> Ngoài ra, tôi có thể viết kịch bản phim ngắn, quảng cáo, v.v 
+				</p>
+    		</div>
+  		</div>
+	</div>
+	</div>
+<!--	End gioi thieu-->
+	
+	<div class="congviec" id="congviec">
+		<div class="container pt-5">	
+			<div class="row align-content-center">
+				<div class="col text-center">
+					<h1 class="cv">Công việc</h1>
+				</div>
+			</div>
+  			<div class="row">
+    			<div class="col">
+      				<h1 class="cv1">Edit video/VFX</h1>
+					<p class="cv2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    			</div>
+    			<div class="col">
+      				<h1 class="cv1">Viết kịch bản</h1>
+					<p class="cv2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    			</div>
+  			</div>
+		</div>
+	</div>
+<!--	End cong viec-->
+	
+	
+	<div class="sanpham" id="sanpham">
+		<div class="container sanph">
+			<div class="row">
+				<div class="col text-center">
+					<h1 class="sp">Sản phẩm</h1>
+					<h2 class="sp2">Chưa cập nhật</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--	End San pham-->
+	
+	
+	<div class="lienhe" id="lienhe">
+		<h1>0912 345 678</h1>
+		<h1>tibi@gmail.com</h1>
+	</div>
+	
+	
+	
+	
+<!--	Bootstrap-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+<!--	Script Nav mobile-->
+		<script>
+					/* Open */
+					function openNav() {
+  					document.getElementById("myNav").style.display = "flex";
+					}
+
+					/* Close */
+					function closeNav() {
+  					document.getElementById("myNav").style.display = "none";
+					}
+		</script>
+</body>
+</html>

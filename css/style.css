@@ -1,0 +1,236 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 100%;
+	background:hsla(0,0%,0%,0.58);
+	height: 10vh;
+	position: fixed;
+	z-index: 999;
+}
+.nav-mb{
+	font-size: 60px;
+	color: white;
+	cursor: pointer;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	background:  pink;*/
+	height: 100%;
+	font-family: 'Nunito', sans-serif;
+}
+
+.menu a{
+	margin: 0 16px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.menu a:hover{
+	color: #ED9E19;
+}
+/*End Header*/
+
+
+.trangchu{
+	background: url("../img/1x/Artboard 1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 100vh;
+	width: auto;
+	background-origin: border-box;
+}
+
+.gioithieu{
+	height: 70vh;
+/*	background: gray;*/
+}
+.con-gth{
+	height: 70vh;
+}
+.binh{
+	width: 50%;
+	height: 100%;
+	margin-left: 10vw;
+}
+.gth h1{
+	font-family: 'Gluten', cursive;
+	font-weight: 300;
+	font-size: 65px;
+	color: #ed9e19;
+}
+
+.gth h2{
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold; 
+	font-size: 30px;
+}
+.gth p{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+/*End gioi thieu*/
+
+
+
+.congviec{
+	height: 50vh;
+	background: gray;
+}
+
+.cv{
+	font-family: 'Gluten', cursive;
+	font-weight: 300;
+	font-size: 65px;
+	color: #ed9e19;
+}
+.cv1{
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold; 
+	font-size: 30px;
+}
+.cv2{
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding-right: 32px;
+}
+/*End Cong viec*/
+
+
+
+.sanpham{
+	height: 50vh;
+}
+.sanph{
+	padding-top: 40px;
+}
+.sp{
+	font-family: 'Gluten', cursive;
+	font-weight: 300;
+	font-size: 65px;
+	color: #ed9e19;
+}
+.sp2{
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold; 
+	font-size: 30px;
+}
+
+.lienhe{
+	height: 50vh;
+	background: #ed9e19;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.lienhe h1{
+	padding: 0 5vw;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold; 
+	font-size: 50px;
+}
+
+
+/*Desktop*/
+@media only screen and (max-width:1600px){
+	.nav{
+	display:none;
+	}
+	.nav-mb{
+		display: none;
+	}
+	.close-nav{
+		display: none;
+	}
+}
+/*Mobile*/
+@media only screen and (max-width:415px){
+	.nav-mb{
+		display: block;
+		text-align: right;
+	}
+	.py-4{
+		padding: 12px 0;
+	}
+	.col{
+		width: 100%;
+	}
+	.trangchu{
+		max-width:415px;
+		overflow: hidden;
+		height: 35vh;
+	}
+	.imgb{
+		flex: 0 0 auto;
+  		width: 100%;
+	}
+	.gth h1{
+		font-size: 20px;
+	}
+	.gth h2{
+		font-size: 20px;
+	}
+	.gth p{
+		font-size: 20px;
+	}
+	.pt-4{
+		padding-top: 0;
+	}
+	.cv{
+		font-size: 20px;
+	}
+	.cv1{
+		font-size: 20px;
+		text-align: center;
+	}
+	.cv2{
+		font-size: 10px;
+		text-align: center;
+	}
+	.pt-5{
+		padding-top: 0;
+	}
+	.sp, .sp2{
+		font-size: 20px;
+	}
+	.lienhe{
+		height: 20vh;
+	}
+	.lienhe h1{
+		font-size: 20px;
+	}
+	.menu{
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		background: hsla(0,0%,0%,0.58);
+		left: 0;
+		top: 0;
+		position: fixed;
+		z-index: 999999;
+	}
+	.menu a{
+		margin-bottom: 12px;
+	}
+	.close-nav{
+		display: block;
+		color: #ED9E19;
+		position: fixed;
+		top: 50px;
+		right: 50px;
+		cursor: pointer;
+	}
+}
